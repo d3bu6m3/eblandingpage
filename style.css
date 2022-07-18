@@ -18,7 +18,7 @@ body {
 }
 
 h1, h2, h3 {
-    margin-top: 0;
+    margin-top: 3.125rem;
     font-weight: 300;
 }
 
@@ -293,10 +293,6 @@ nav {
     text-align: center;
 }
 
-.features-container {
-    
-}
-
 .features-item {
     padding: 0.9375rem;
     
@@ -306,12 +302,59 @@ nav {
     margin-bottom: 2.25rem;
 }
 
-.features-title {
+
+/**
+ Mobile Articles section
+*/
+.articles {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.articles-wrapper {
 
 }
 
-.features-description {
+.articles-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+}
 
+.articles-item {
+    border-radius: 5px;
+    background-color: white;
+    overflow: hidden;
+    transition: all 100ms ease-in-out;
+}
+
+.articles-item:hover {
+    transform: scale(1.03);
+}
+
+.articles-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 12.5rem;
+}
+
+.articles-text {
+    padding: 25px 25px 30px 25px;
+    
+}
+
+.articles-author p {
+    font-size: 9px;
+    margin-bottom: 1rem;
+}
+
+.articles-title {
+    color: hsl(233, 26%, 24%);
+}
+
+.articles-description p {
+    line-height: 1.2;
+    font-size: 13px;
 }
 
 
@@ -371,14 +414,9 @@ nav {
         order: 1;
         text-align: left;
     }
-
     /** 
     * Features section
     */
-    .features {
-        
-    }
-    
     .features-wrapper {
         max-width: 69.375rem;
         margin: 0 auto;
@@ -394,17 +432,37 @@ nav {
         flex: 0 0 45%;
         
     }
-    
-    .features-icon {
-    
+    /**
+    Mobile Articles section
+    */
+    .articles {
+
     }
-    
-    .features-title {
-    
+
+    .articles-wrapper {
+        max-width: 69.375rem;
+        margin: 0 auto;
     }
-    
-    .features-description {
-    
+
+    .articles-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .articles-item {
+
+    }
+
+    .articles-image {
+
+    }
+
+    .articles-author {
+
+    }
+
+    .articles-text {
+
     }
 }
     @media (min-width: 64rem) {
@@ -442,14 +500,14 @@ nav {
     
         .hero .hero-image::before {
             position: absolute;
-            left: 16%;
+            left: 5%;
             height: 90%;
-            width: 120%;
+            width: 150%;
             content: '';
             background-image: url(images/bg-intro-desktop.svg);
             background-repeat: no-repeat;
-            background-size: 112%;
-            background-position: center 388%;
+            background-size: 113%;
+            background-position: center 88%;
             transform: none;
         }
 
@@ -462,10 +520,6 @@ nav {
         /** 
         * Features section
         */
-        .features {
-
-        }
-        
         .features-wrapper {
             max-width: 69.375rem;
             margin: 0 auto;
@@ -483,17 +537,37 @@ nav {
         .features-item {
             flex: 1;
         }
-        
-        .features-icon {
-        
+        /**
+        Mobile Articles section
+        */
+        .articles {
+
         }
-        
-        .features-title {
-        
+
+        .articles-wrapper {
+            max-width: 69.375rem;
+            margin: 0 auto;
         }
-        
-        .features-description {
-        
+
+        .articles-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .articles-item {
+           
+        }
+
+        .articles-image {
+            
+        }
+
+        .articles-author {
+
+        }
+
+        .articles-text {
+
         }
     }
     @media (min-width: 87.5rem) {
@@ -551,10 +625,6 @@ nav {
         /** 
         * Features section
         */
-        .features {
-            
-        }
-
         .features-wrapper {
             max-width: 69.375rem;
             margin: 0 auto;
@@ -578,6 +648,36 @@ nav {
         
         .features-description {
         
+        }
+        /**
+        Mobile Articles section
+        */
+        .articles {
+
+        }
+
+        .articles-wrapper {
+
+        }
+
+        .articles-container {
+
+        }
+
+        .articles-item {
+
+        }
+
+        .articles-image {
+
+        }
+
+        .articles-author {
+
+        }
+
+        .articles-text {
+
         }
     }
 
