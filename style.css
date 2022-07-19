@@ -522,9 +522,15 @@ nav {
     Mobile Footer section
     */
     .footer {
+        
+    }
+
+    .footer-wrapper {
+        max-width: 69.375rem;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 2fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr auto;
         grid-template-areas: 
         "logo links1 links2 cta"
         "social links1 links2 copyright";
@@ -542,8 +548,10 @@ nav {
     }
 
     .footer-link {
+        justify-content: space-between;
         align-items: start;
         font-size: 16px;
+        line-height: unset;
     }
 
     .col1 {
