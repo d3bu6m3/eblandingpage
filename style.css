@@ -357,13 +357,67 @@ nav {
     font-size: 13px;
 }
 
+/** 
+ Mobile Footer section
+*/
+.footer {
+    background-color: hsl(233, 26%, 24%);
+    color: white;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 1.875rem;
+}
+
+.footer-social {
+    margin-bottom: 1.875rem;
+}
+
+.footer-social a:not(:last-child) {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer-link a {
+    line-height: 2.3;
+}
+
+.col1 {
+
+}
+
+.col2 {
+    margin-bottom: 1.875rem;
+}
+
+.footer-cta {
+    margin-bottom: 1.875rem;
+}
+
+.footer-cta .button {
+    margin-bottom: 1.875rem;
+}
 
 
 /** 
  Desktop Viewport  
  640px, 1024px, 1400px
 */
-@media (min-width: 40rem) {
+@media (min-width: 51rem) {
     .header-menu {
         display: none;
     }
@@ -463,6 +517,54 @@ nav {
 
     .articles-text {
 
+    }
+    /** 
+    Mobile Footer section
+    */
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "logo links1 links2 cta"
+        "social links1 links2 copyright";
+        justify-items: start;
+    }
+
+    .footer-logo {
+        grid-area: logo;
+        margin-bottom: 0;
+    }
+
+    .footer-social {
+        grid-area: social;
+        margin-bottom: 0;
+    }
+
+    .footer-link {
+        align-items: start;
+        font-size: 16px;
+    }
+
+    .col1 {
+        grid-area: links1;
+    }
+
+    .col2 {
+        grid-area: links2;
+        margin-bottom: 0;
+    }
+
+    .footer-cta {
+        grid-area: cta;
+        justify-self: end;
+        margin-bottom: 0;
+    }
+    
+    .footer-copyright {
+        grid-area: copyright;
+        justify-self: end;
+        font-size: 16px;
     }
 }
     @media (min-width: 64rem) {
@@ -568,6 +670,28 @@ nav {
 
         .articles-text {
 
+        }
+        /** 
+        Mobile Footer section
+        */
+        .footer {
+
+        }
+
+        .footer-logo {
+
+        }
+
+        .footer-social {
+
+        }
+
+        .footer-link {
+
+        }
+
+        .footer-cta {
+            
         }
     }
     @media (min-width: 87.5rem) {
@@ -679,13 +803,35 @@ nav {
         .articles-text {
 
         }
+        /** 
+        Mobile Footer section
+        */
+        .footer {
+
+        }
+
+        .footer-logo {
+
+        }
+
+        .footer-social {
+
+        }
+
+        .footer-link {
+
+        }
+
+        .footer-cta {
+            
+        }
     }
 
 /** 
  Mobile Viewport 
  639px, 1023px, 1399px
 */
-@media (max-width: 39.960rem) {
+@media (max-width: 50.925rem) {
     .header-link {
         display: none;
     }
